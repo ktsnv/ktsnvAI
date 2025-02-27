@@ -1,4 +1,5 @@
 function getForm(event) {
+  const container = document.querySelector("#container");
   event.preventDefault();
   var prompt = document.getElementById("prompt").value;
   var image = document.getElementById("image").value;
@@ -9,6 +10,11 @@ function getForm(event) {
   else {
     result = aiText(prompt);
   }
+  const br = document.createElement("br");
+  const embed = document.createElement('embed');
+  container.append(br);
+  embed.setAttribute('src',result);
+  container.append(embed);
 }
 function aiText(prompt) {
   return "https://text.pollinations.ai/prompt/"+encodeURIComponent(prompt);
