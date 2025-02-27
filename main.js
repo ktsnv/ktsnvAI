@@ -1,7 +1,7 @@
 function getForm(event) {
   const container = document.querySelector("#container");
   event.preventDefault();
-  var prompt = document.getElementById("prompt").value;
+  var prompt = document.getElementById("text").value;
   var image = document.getElementById("image").value;
   var result;
   if (image) {
