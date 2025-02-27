@@ -23,13 +23,14 @@
   </style>
   <body>
     <script src="main.js"></script>
-    <div id="frame"></div>
-    <form id="form" onsubmit="getForm()" target="_self">
-      <label for="prompt">Prompt:</label>
-      <input type="text" id="prompt"></input>
-      <label for="image">Make Image Instead of Text:</label>
-      <input type="checkbox" id="image"></input>
-      <input type="submit" value="Submit">
-    </form>
+    <div id="frame">
+      <form id="form" onsubmit="getForm()" target="_self">
+        <label for="prompt">Prompt:</label>
+        <input type="text" id="prompt"></input>
+        <label for="image">Make Image Instead of Text:</label>
+        <input type="checkbox" id="image"></input>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
   </body>
 </html>
