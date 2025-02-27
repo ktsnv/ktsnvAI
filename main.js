@@ -1,7 +1,7 @@
 function getForm() {
   const container = document.querySelector("#frame");
   var prompt = document.getElementById("text").value;
-  var image = document.getElementById("image").value;
+  var image = document.getElementById("image").checked;
   var result;
   if (image) {
     result = aiImage(prompt);
