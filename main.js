@@ -1,5 +1,5 @@
 function getForm() {
-  const container = document.querySelector("#container");
+  const container = document.querySelector("#frame");
   var prompt = document.getElementById("text").value;
   var image = document.getElementById("image").value;
   var result;
