@@ -4,8 +4,26 @@
     <meta charset="utf-8">
     <title>ktsnv AI</title>
   </head>
+  <style>
+    #frame {
+      max-width: 800px;
+      object-fit: contain;
+
+      background-color: #494d7e;
+      border: 1px solid #8b6d9c;
+      border-radius: 8px;
+
+      padding: 4px;
+      padding-left: 16px;
+      padding-right: 16px;
+
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
   <body>
     <script src="main.js"></script>
+    <div id="frame"></div>
     <form id="form" onsubmit="getForm()" target="_self">
       <label for="prompt">Prompt:</label>
       <input type="text" id="prompt"></input>
